@@ -1,0 +1,110 @@
+/* =====================================================
+   deixando no style pq n vou dar lixo pra prof
+   tamo com os bagulhete aq né tmj
+   ===================================================== */
+
+:root {
+  --cor-fundo:   #0d0d12;   /* fundo */
+  --cor-painel:  #17171f;   /* boxxx */
+  --cor-borda:   #34344a;   /* contornos */
+  --cor-texto:   #e8e8f0;   /* texto fistzão */
+  --cor-suave:   #8a8aa3;   /* texto twozão */
+  --cor-destaque:#d9d9ff;   /* botões ativos e foco */
+
+  --fonte-titulo: "Courier New", monospace;
+  --fonte-texto:  system-ui, sans-serif;
+  --fonte-gaster: "Segoe UI Symbol", "Noto Sans Symbols", "Noto Sans Symbols 2", sans-serif;
+}
+
+/* -------- corpixu ;-; --------*/
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--cor-fundo);
+  color: var(--cor-texto);
+  font-family: var(--fonte-texto);
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+/* --------- cabeça do krl(cabeçalho) -------- */
+.cabecalho { text-align: center; margin-bottom: 2rem; }
+
+.titulo {
+  font-family: var(--fonte-titulo);
+  font-size: clamp(2.2rem, 8vw, 3.8rem);
+  letter-spacing: 0.35em;
+  margin: 0;
+  font-weight: 400;
+}
+
+.subtitulo { color: var(--cor-suave); margin: 0.5rem 0 0; }
+
+/* ---------- trans-lator ---------- */
+.tradutor {
+  width: 100%;
+  max-width: 640px;
+  background: var(--cor-painel);
+  border: 1px solid var(--cor-borda);
+  padding: 1.5rem;
+}
+
+.modos { display: flex; gap: 0.5rem; margin-bottom: 1.25rem; }
+
+.modo {
+  flex: 1;
+  padding: 0.6rem;
+  background: transparent;
+  color: var(--cor-suave);
+  border: 1px solid var(--cor-borda);
+  cursor: pointer;
+  font: inherit;
+}
+
+.modo.ativo {
+  color: var(--cor-fundo);
+  background: var(--cor-destaque);
+  border-color: var(--cor-destaque);
+}
+
+.rotulo { display: block; margin: 0 0 0.4rem; color: var(--cor-suave); font-size: 0.9rem; }
+
+textarea,
+.saida {
+  width: 100%;
+  background: var(--cor-fundo);
+  color: var(--cor-texto);
+  border: 1px solid var(--cor-borda);
+  padding: 0.8rem;
+  font: inherit;
+  font-size: 1.1rem;
+}
+
+textarea { resize: vertical; margin-bottom: 1.25rem; }
+textarea:focus,
+.modo:focus-visible,
+.botao:focus-visible { outline: 2px solid var(--cor-destaque); outline-offset: 2px; }
+
+/* isso vai usar os simbulusss se for gasterr */
+.saida {
+  min-height: 7rem;
+  word-break: break-word;
+  white-space: pre-wrap;
+  margin-bottom: 0.75rem;
+}
+.saida.gaster { font-family: var(--fonte-gaster); font-size: 1.5rem; letter-spacing: 0.08em; }
+
+.botao {
+  padding: 0.6rem 1.4rem;
+  background: var(--cor-destaque);
+  color: var(--cor-fundo);
+  border: none;
+  cursor: pointer;
+  font: inherit;
+}
+

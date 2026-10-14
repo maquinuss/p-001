@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tradutor do W.D. Gaster</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== cabeça maneira ========== -->
+  <header class="cabecalho">
+    <h1 class="titulo">W.D. Gaster</h1>
+    <p class="subtitulo">Tradutor de texto para a língua de Gaster</p>
+  </header>
+
+  <!-- ========== tradutor ========== -->
+  <main class="tradutor">
+
+    <!-- butao pra trocar -->
+    <div class="modos">
+      <button class="modo ativo" data-modo="para-gaster">Texto → Gaster</button>
+      <button class="modo" data-modo="para-texto">Gaster → Texto</button>
+    </div>
+
+    <!-- entrada -->
+    <label class="rotulo" for="entrada" id="rotulo-entrada">Escreva seu texto</label>
+    <textarea id="entrada" rows="4" placeholder="Digite aqui..."></textarea>
+
+    <!-- saidaa -->
+    <p class="rotulo" id="rotulo-saida">Tradução</p>
+    <div class="saida-area">
+      <div id="saida" class="saida" aria-live="polite"></div>
+      <button id="copiar" class="botao">Copiar</button>
+    </div>
+
+  </main>
+
+  <footer class="rodape">
+    <p>Baseado na fonte Wingdings, usada por Gaster em Undertale.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
