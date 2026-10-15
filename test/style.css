@@ -1,7 +1,7 @@
-/* =====================================================
+/*
    deixando no style pq n vou dar lixo pra prof
-   tamo com os bagulhete aq né tmj
-   ===================================================== */
+        tamo com os bagulhete aq né tmj
+*/
 
 :root {
   --cor-fundo:   #0d0d12;   /* fundo */
@@ -9,14 +9,14 @@
   --cor-borda:   #34344a;   /* contornos */
   --cor-texto:   #e8e8f0;   /* texto fistzão */
   --cor-suave:   #8a8aa3;   /* texto twozão */
-  --cor-destaque:#d9d9ff;   /* botões ativos e foco */
+  --cor-destaque:#d9d9ff;   /* botões */
 
   --fonte-titulo: "Courier New", monospace;
   --fonte-texto:  system-ui, sans-serif;
   --fonte-gaster: "Segoe UI Symbol", "Noto Sans Symbols", "Noto Sans Symbols 2", sans-serif;
 }
 
-/* -------- corpixu ;-; --------*/
+/*  corpixu ;-; */
 * { box-sizing: border-box; }
 
 body {
@@ -32,7 +32,7 @@ body {
   padding: 2rem 1rem;
 }
 
-/* --------- cabeça do krl(cabeçalho) -------- */
+/*  cabeça do krl(cabeçalho)  */
 .cabecalho { text-align: center; margin-bottom: 2rem; }
 
 .titulo {
@@ -45,7 +45,7 @@ body {
 
 .subtitulo { color: var(--cor-suave); margin: 0.5rem 0 0; }
 
-/* ---------- trans-lator ---------- */
+/* trans-lator */
 .tradutor {
   width: 100%;
   max-width: 640px;
