@@ -1,10 +1,8 @@
 
+/*  1. as letrinha do gaster 
 
-
-
-/* --------- 1. as letrinha do gaster --------
-   cada letrinha é do site eu n  :(.
    Para trocar um símbolo, é só mudar o valor da linha. */
+
 const SIMBOLOS = {
   A: "✌", B: "👌", C: "👍", D: "👎", E: "☜", F: "☞", G: "☝", H: "☟", I: "✋",
   J: "☺", K: "😐", L: "☹", M: "💣", N: "☠", O: "⚐", P: "🏱", Q: "✈", R: "☼",
@@ -20,11 +18,11 @@ const SIMBOLOS = {
 
 const FORCAR_TEXTO = "\uFE0E";
 
-/* pra n bugar (ex.: "ã" → "a"). */
+/* pra n bugar (ex.: "ã" ->> "a"). */
 const REMOVER_ACENTOS = true;
 
 
-/* ---------- 2. o tradutor né? --------- */
+/*  2. o tradutor né?  */
 
 // tabela inversa (símbolo -> letra), criada automaticamente
 const LETRAS = Object.fromEntries(
@@ -57,24 +55,24 @@ function paraTexto(texto) {
 }
 
 
-/* ---------- 3. elementinhus pag --------- */
-const entrada      = document.getElementById("entrada");
-const saida        = document.getElementById("saida");
-const botaoCopiar  = document.getElementById("copiar");
-const botoesModo   = document.querySelectorAll(".modo");
+/*  3. elementinhus pag */
+const entrada = document.getElementById("entrada");
+const saida = document.getElementById("saida");
+const botaoCopiar = document.getElementById("copiar");
+const botoesModo = document.querySelectorAll(".modo");
 const rotuloEntrada = document.getElementById("rotulo-entrada");
-const rotuloSaida   = document.getElementById("rotulo-saida");
+const rotuloSaida = document.getElementById("rotulo-saida");
 
 let modoAtual = "para-gaster";
 
 // isso ajuda a digitar a vontade
 const TEXTOS = {
-  "para-gaster": { entrada: "Escreva seu texto",       saida: "Tradução em Gaster" },
-  "para-texto":  { entrada: "Cole o texto em Gaster",  saida: "Tradução em texto" },
+  "para-gaster": { entrada: "Escreva seu texto", saida: "Tradução em Gaster" },
+  "para-texto": { entrada: "Cole o texto em Gaster", saida: "Tradução em texto" },
 };
 
 
-/* --------- 4 everton ---------- */
+/*  4 everton  */
 
 // atualiza o resultado sempre que algo muda né
 function atualizar() {
